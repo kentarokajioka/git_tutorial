@@ -14,6 +14,7 @@
     [git add](./_img/udemy7.jpg)
     [git commit](./_img/udemy8.jpg)
     [git status](./_img/udemy9.jpg)
+    [git diff]()
 
 - コマンド一覧
     - git init : gitにアップするフォルダに.gitファイルを作成する。
@@ -21,3 +22,4 @@
     - git add ${ファイル名} : ステージアップするファイルだけ。
     - git commit -v : 変更内容を確認してから、コミットメッセージを打てる。
     - git status : リポジトリとステージの差分、ステージとワークツリーの差分を確認できる。
+    - git diff : ワークツリーとステージの変更差分を確認することができる。「--staged」を追記することでステージとリポジトリの差分を確認できる。 
