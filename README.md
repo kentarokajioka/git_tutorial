@@ -59,7 +59,21 @@
             - コンフリクトした時 : 「<<」「==」「>>」を削除することでマージできる。
         - git brance -m <ブランチ名> : 現在の作業ブランチ名を変更することができる。
         - git branch -d <ブランチ名> : 指定したブランチを削除する。
-
+    - Github flowの流れ
+        - git branch : 現在のブランチ名を確認
+        - git status : 現在のワークツリーの状態と齟齬ないか確認
+        - git pull origin master : 最新の状態に更新
+        - git checkout -b xxx : ブランチ作成
+        - コード変更
+        - git add . : ステージにファイルをアップ
+        - git commit : ローカルリポジトリにアップ
+        - git push origin xxx : ブランチ名と同じ名前でpushする
+        - githubでpull requestしてマージをする。
+        - git checkout master : マスターブランチに切り替え
+        - git pull origin master : マージした内容をローカルに反映
+        - git branch -d xxx : 作成したブランチを削除
+    - リベース（変更を統合する、merge以外のやり方）
+        - git rebase <ブランチ名> : ベースとなるコミット先を別のコミット先に変更、masterが変更された分を取り込みたいときに使う[リベースとマージの違い](./_img/udemy10.jpg)
 
 - エイリアス（ショートカット）をつける
     - git config --global alias.ci commit
